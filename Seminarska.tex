@@ -97,5 +97,47 @@ Potem si predstavljamo pravokotnik s stranico $x$ kjer je $x$ enak temu, kar smo
 To ponavljamo, dokler dvakrat ne dobimo iste rešitve ali nismo zadovoljni z odgovorom.
 \end{defbox}
 
+\newpage
+
+\section{Primer računanja}
+
+\begin{zgledbox}{Primer z vizualno pomočjo}
+Za primer bom izračunal najbolj pogost primer iracionalnega korena v matematiki, $\sqrt{2}$.\\
+Če želimo dobiti vrednost tega korena, moramo za ploščino kvadrata uporabiti, kar je v korenu.\\
+Začnemo z ugibanjem, da je $\sqrt{2}$ enak 1.5, kar pomeni, da je druga stranica $\frac{2}{1.5} = 1.33$.
+\begin{center}
+\begin{tikzpicture}
+\draw[thick] (0,0) rectangle (3,2.66);
+\node at (1.5,1.33) {$2$};
+\node[below] at (1.5,0) {$1.5$};
+\node[right] at (3,1.33) {$1.3$};
+\end{tikzpicture}
+\end{center}
+Sedaj moramo po računu sešteti velikost stranic in jo delimo z 2, da dobimo še boljši približek.\\
+S tem bomo vzeli točno polovico teh dveh stranic in dobili še natančnejši odgovor.\\
+\begin{align*}
+x &= \dfrac{1}{2}\left(1.5 + 1.33\right)\\
+x &= \dfrac{2.83}{2}\\
+x &= 1.415
+\end{align*}
+Sedaj že prepoznamo približek, ki ga vedno uporabljamo. Lahko gremo pa še korak dlje in postopek ponovimo.
+Tokrat bo prva stranica $1.415$, zato bo druga $1.413$.
+\begin{center}
+\begin{tikzpicture}
+\draw[thick] (0,0) rectangle (2.83,2.826);
+\node at (1.415,1.413) {$2$};
+\node[below] at (1.415,0) {$1.415$};
+\node[right] at (2.83,1.413) {$1.413$};
+\end{tikzpicture}
+\end{center}
+Ponovno jih seštejemo in delimo z 2:\\
+\begin{align*}
+x &= \dfrac{1}{2} \left(1.415 + \dfrac{2}{1.415}\right)\\
+x &= \dfrac{1}{2} \left(1.415 + 1.413\right)\\
+x &= \frac{2.828}{2}\\
+x &= 1.414
+\end{align*}
+To lahko nadaljujemo kolikokrat želimo in tako dobimo vedno bližji odgovor.
+\end{zgledbox}
 
 \end{document}
